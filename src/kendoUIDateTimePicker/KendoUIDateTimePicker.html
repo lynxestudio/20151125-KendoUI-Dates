@@ -1,0 +1,42 @@
+ <!doctype html>
+  <html>
+ <head>
+   <meta charset="utf8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>Kendo date and time example</title>
+   <script src="js/jquery-1.11.3.min.js"></script>
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/kendo/kendo.common.min.css">
+   <link rel="stylesheet" href="css/kendo/kendo.bootstrap.min.css">
+   <script src="js/kendo.all.min.js"></script>
+   <script src="js/kendo.aspnetmvc.min.js"></script>
+   <script src="js/dateTimeSample.js"></script>
+ </head>
+ <body>
+   <div class="container">
+  <div class="row">
+    <div class="form-group">
+    <label for="inputClock">Current date and time is</label>
+    <span id="inputClock"></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col-md-3">
+   <label for="startDate">Appointment Date:</label>
+   <input type="date" id="startDate" name="startDate">
+    </div>
+     <div class="form-group col-md-3">
+    <label for="startTime">Appointment time:</label>
+    <input id="startTime" name="starTime"/>
+    </div>
+  </div>
+  <div class="row">
+   <span class="col-md-2"><input type="radio" name="options" value="null" id="now" checked="true"/>Now</span>
+   <span class="col-md-2"><input type="radio" name="options" value="1" id="opLastHour" class="col-md-2"/>Last hour</span>
+   <span class="col-md-2"><input type="radio" name="options" value="24" id="opLast24Hours" class="col-md-2" />Last 24 hours</span>
+   <span class="col-md-2"><input type="radio" name="options" value="12" id="opLast12Hours" class="col-md-2" />Last 12 hours</span>
+   <span class="col-md-2"><input type="radio" name="options" value="-1" id="opYesterday" class="col-md-2" />Yesterday</span>
+  </div>
+   </div>
+ </body>
+  </html>
